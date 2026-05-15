@@ -15,11 +15,10 @@ const common_1 = require("@nestjs/common");
 const product_entity_1 = require("./entities/product.entity");
 const memory_cache_service_1 = require("./cache/memory-cache.service");
 let ProductsService = ProductsService_1 = class ProductsService {
-    cacheService;
-    logger = new common_1.Logger(ProductsService_1.name);
-    products = [];
     constructor(cacheService) {
         this.cacheService = cacheService;
+        this.logger = new common_1.Logger(ProductsService_1.name);
+        this.products = [];
         this.generateMockData();
     }
     generateMockData() {

@@ -17,7 +17,6 @@ const common_1 = require("@nestjs/common");
 const products_service_1 = require("./products.service");
 const get_products_dto_1 = require("./dto/get-products.dto");
 let ProductsController = class ProductsController {
-    productsService;
     constructor(productsService) {
         this.productsService = productsService;
     }

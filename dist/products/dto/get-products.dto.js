@@ -13,10 +13,10 @@ exports.PaginatedResponseDto = exports.GetProductsDto = void 0;
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 class GetProductsDto {
-    page = 1;
-    limit = 10;
-    category;
-    stock_status;
+    constructor() {
+        this.page = 1;
+        this.limit = 10;
+    }
 }
 exports.GetProductsDto = GetProductsDto;
 __decorate([
@@ -45,8 +45,6 @@ __decorate([
     __metadata("design:type", String)
 ], GetProductsDto.prototype, "stock_status", void 0);
 class PaginatedResponseDto {
-    data;
-    meta;
 }
 exports.PaginatedResponseDto = PaginatedResponseDto;
 //# sourceMappingURL=get-products.dto.js.map

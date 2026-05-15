@@ -10,9 +10,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MemoryCacheService = void 0;
 const common_1 = require("@nestjs/common");
 let MemoryCacheService = MemoryCacheService_1 = class MemoryCacheService {
-    logger = new common_1.Logger(MemoryCacheService_1.name);
-    cache = new Map();
-    TTL = 60000;
+    constructor() {
+        this.logger = new common_1.Logger(MemoryCacheService_1.name);
+        this.cache = new Map();
+        this.TTL = 60000;
+    }
     get(key) {
         const entry = this.cache.get(key);
         if (!entry) {

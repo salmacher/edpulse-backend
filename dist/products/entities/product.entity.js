@@ -8,11 +8,6 @@ var StockStatus;
     StockStatus["OUT_OF_STOCK"] = "out_of_stock";
 })(StockStatus || (exports.StockStatus = StockStatus = {}));
 class Product {
-    id;
-    name;
-    category;
-    price;
-    stock_status;
 }
 exports.Product = Product;
 //# sourceMappingURL=product.entity.js.map
